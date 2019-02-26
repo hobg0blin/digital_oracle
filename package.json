@@ -1,0 +1,16 @@
+{
+  "name": "oracledeck",
+  "version": "1.0.0",
+  "description": "Oracle deck for a computer as a querent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brent Bailey",
+  "license": "ISC",
+  "dependencies": {
+    "https": "^1.0.0",
+    "sentiment": "^5.0.1",
+    "shelljs": "^0.8.3"
+  }
+}
