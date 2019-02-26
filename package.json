@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "https": "^1.0.0",
+    "ps-list": "^6.1.0",
     "sentiment": "^5.0.1",
     "shelljs": "^0.8.3"
   }
