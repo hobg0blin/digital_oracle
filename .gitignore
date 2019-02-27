@@ -1,1 +1,4 @@
 .env
+/training-lstm/*
+/documentation/*
+/node_modules/*
