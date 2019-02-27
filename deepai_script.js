@@ -24,6 +24,7 @@ https.get('https://rws-cards-api.herokuapp.com/api/v1/cards', (resp) => {
     });
 
   titles.map(title => {
+    //failed attempt to generate image from card description
  response = deepai.callStandardApi("text2img", {
         caption: `${title.desc}`,
  }).then(result => {

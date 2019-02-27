@@ -13,15 +13,17 @@ function setup() {
 }
 function generate() {
   let card ={};
+  // generate title from titles model
   let title = titleGen.generate({ seed: 'The', length: getRandomArbitrary(8, 25) , temperature: 0.5}, (e, r) => {
     card['title'] = 'The' + r.sample;
   });
-
+  // generate description from Guide to Tarot Meanings model
   let guide = guideGen.generate({  length: getRandomArbitrary(50, 400) , temperature: 0.5}, (e, r) => {
     card['desc'] = r.sample;
     cards.push(card);
     console.log('currentcard: ', card);
     console.log('cards: ', cards);
+    // display card info
     select('#currentcard').html(`title: ${card.title}
     desc: ${card.desc}
     cardcount: ${cards.length}`);
