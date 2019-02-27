@@ -3,6 +3,8 @@
 
 Digital Oracle is two things: a char-rn-based oracle deck generator and a terminal-based tarot reading script. It uses sentiment analysis on an RNN-generated tarot deck (in JSON format) to determine an action for your computer to take - either running the start command and ‘cherishing’ an existing process, or killing an existing process if the reading is determined to be negative.
 
+You can find a blog post about the process [here](https://medium.com/@brentbailey/digital-oracle-29621767786b).
+
 ## Getting started
 
 To generate your own deck, clone this repo, install http-server
