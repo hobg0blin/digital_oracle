@@ -18,8 +18,8 @@ function generate() {
     card['title'] = 'The' + r.sample;
   });
   // generate description from Guide to Tarot Meanings model
-  let guide = guideGen.generate({  length: getRandomArbitrary(50, 400) , temperature: 0.5}, (e, r) => {
-    card['desc'] = r.sample;
+  let guide = guideGen.generate({  seed: 'A ', length: getRandomArbitrary(50, 400) , temperature: 0.5}, (e, r) => {
+    card['desc'] = 'A ' + r.sample;
     cards.push(card);
     console.log('currentcard: ', card);
     console.log('cards: ', cards);
