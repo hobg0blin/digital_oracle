@@ -24,8 +24,8 @@ function generate() {
     console.log('currentcard: ', card);
     console.log('cards: ', cards);
     // display card info
-    select('#currentcard').html(`title: ${card.title}
-    desc: ${card.desc}
+    select('#currentcard').html(`title: ${card.title}<br>
+  description: ${card.desc}<br>
     cardcount: ${cards.length}`);
   });
 }
