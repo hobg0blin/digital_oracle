@@ -10,6 +10,7 @@ You can find a blog post about the process [here](https://medium.com/@brentbaile
 To generate your own deck, clone this repo, install http-server
 
 ``` npm i http-server ```
+and start it inside the repo.
 
 Then go to localhost:{portnumber}/generator.html. Once you feel you’ve generated enough cards, you can download them as a JSON file (a warning - after running the generate function about 20 times, it tends to drastically slow down and give bad output, same if you click it a bunch of times at once without waiting for the newest card to be generated). This is pretty easily fixed by just reloading the page.
 
