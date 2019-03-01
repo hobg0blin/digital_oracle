@@ -28,7 +28,7 @@ There’s also a script (deepai_script.js) that was an attempt to pull from [dee
 
 ## Sources
 
-The LSTM model is trained (for titles) on the 78 original tarot cards from the Rider-Waite deck, and for descriptions on the text of [A Guide to Tarot Meanings](http://tarottools.com/a-guide-to-tarot-card-meanings/). I’m using [ml5’s char-rnn model](https://ml5js.org/docs/CharRNN) to generate the cards. Sentiment analysis is done through [the npm sentiment module](https://www.npmjs.com/package/sentiment). If I’m missing anything else that deserves credit, please feel free to reach out and let me know. This is extremely open-source and anyone is welcome to steal any and all of my code.
+The LSTM model is trained (for titles) on the 78 original tarot cards from the Rider-Waite deck, and for descriptions on the texts of [A Guide to Tarot Meanings](http://tarottools.com/a-guide-to-tarot-card-meanings/) and [The Unofficial Wild Unknown Meanings](http://carriemallon.com/blog/the-unofficial-wild-unknown-tarot-card-meanings-download-print-love/). I’m using [ml5’s char-rnn model](https://ml5js.org/docs/CharRNN) to generate the cards. Sentiment analysis is done through [the npm sentiment module](https://www.npmjs.com/package/sentiment). If I’m missing anything else that deserves credit, please feel free to reach out and let me know. This is extremely open-source and anyone is welcome to steal any and all of my code.
 
 
 Happy divining!

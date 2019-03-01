@@ -8,11 +8,13 @@ let cards = [];
 function setup() {
   generateButton = select("#generate");
   downloadButton = select("#download");
+  //TODO: disable button until title and text are generated
   generateButton.mousePressed(generate);
   downloadButton.mousePressed(download);
 }
 function generate() {
   let card ={};
+  generateButton.attribute('disabled', true);
   // generate title from titles model
   let title = titleGen.generate({ seed: 'The', length: getRandomArbitrary(8, 25) , temperature: 0.5}, (e, r) => {
     card['title'] = 'The' + r.sample;
@@ -24,9 +26,11 @@ function generate() {
     console.log('currentcard: ', card);
     console.log('cards: ', cards);
     // display card info
-    select('#currentcard').html(`title: ${card.title}<br>
-  description: ${card.desc}<br>
-    cardcount: ${cards.length}`);
+    select('#currentcard').html(`Title: ${card.title}<br><br>
+  Description: ${card.desc}<br><br>
+    Cards in Deck: ${cards.length}`);
+    //dumb that p5 doesn't have this function but whatever
+    document.getElementById('generate').removeAttribute('disabled');
   });
 }
 
